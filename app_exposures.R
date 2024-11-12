@@ -189,7 +189,7 @@ server <- function(input, output) {
         g <- ggplot(rv$location, aes(x = PolicyYear, y = (Premium / (`Total Insured Value` / 100)), 
                                      color = Location)) +
           geom_line() + 
-          labs(x = "Year", y = "Premium per $100 Total Insured Value", title = "Premium Over Time")
+          labs(x = "Year", y = "Premium per $100 Total Insured Value", title = "Premium Over Time per $100 Insured")
       }
       #Loss Cost graph CUMMEAN() FUNCTION IS KINDA SKETCHY BUT IT LOOKS SO SHIT OTHERWISE IDK
       if (input$metric_choice == "Loss Cost"){
